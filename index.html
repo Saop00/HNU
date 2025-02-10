@@ -15,9 +15,15 @@
             border: none;
         }
     </style>
+    <!-- Add CSP meta tag for older browsers -->
+    <meta http-equiv="Content-Security-Policy" content="frame-src https://hnu-worker.anop909908.workers.dev;">
 </head>
 <body>
-    <!-- Use the proxy server URL here -->
-    <iframe src="https://hnu-worker.anop909908.workers.dev"></iframe>
+    <iframe 
+        src="https://hnu-worker.anop909908.workers.dev/" 
+        allow="autoplay; fullscreen" 
+        referrerpolicy="no-referrer-when-downgrade"
+        sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-modals"
+    ></iframe>
 </body>
 </html>
